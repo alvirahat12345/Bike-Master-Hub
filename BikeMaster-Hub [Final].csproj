@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A30E0D66-63CE-4E85-AC55-C1410F995038}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BikeMaster_Hub__Final_</RootNamespace>
+    <AssemblyName>BikeMaster-Hub [Final]</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.6.3.0\lib\net452\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.6.3.0\lib\net452\Bunifu.UI.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Utils.1.0.5\lib\net45\Bunifu.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Main.Designer.cs">
+      <DependentUpon>Admin Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer CRUD.Designer.cs">
+      <DependentUpon>Customer CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product CRUD.Designer.cs">
+      <DependentUpon>Product CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchProduct.Designer.cs">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service CRUD.Designer.cs">
+      <DependentUpon>Service CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceInvoice.Designer.cs">
+      <DependentUpon>ServiceInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician CRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician CRUD.Designer.cs">
+      <DependentUpon>Technician CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfileData.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Main.resx">
+      <DependentUpon>Admin Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer CRUD.resx">
+      <DependentUpon>Customer CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product CRUD.resx">
+      <DependentUpon>Product CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchProduct.resx">
+      <DependentUpon>SearchProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service CRUD.resx">
+      <DependentUpon>Service CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceInvoice.resx">
+      <DependentUpon>ServiceInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician CRUD.resx">
+      <DependentUpon>Technician CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-5-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-3-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honda-png-logo-32847.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-bajaj-auto-logo-motorcycle-bajaj-pulsar-brand-motomania-5b713b0e5d45d0.0982105815341473423821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suzuki-logo-car-brands-6686.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yamaha-logo-3860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart1191532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipart3565024.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wh61y98i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9ybqusl9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ltd6mkps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9husso5d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tyre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-12-11 011916.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-line %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-2-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\draft-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-list-3-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-check-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-check-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-line11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-line1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-image-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-image-line %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda CBR 150R Non ABS Disc Indonesia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Air Filter Cleaner For YAMAHA FZ-S150 FI V2.0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carburator Manifold Honda Hunk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda CBR Looking Glass Indo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CB Trigger Meter Sensor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda CB Tigger Timing Chain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CBR Repsol Clutch Plate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda X blade Headlight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R155 V4 Meter Shade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gixxer fi Alloy Rim original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yamaha Fzs v1 Side Cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda X Blade DD Front Hydraulic Brake Pad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda CBR 150 Genuine Headlight Thailand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R15v3 Radiator with fan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Honda Xblade Plug Original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map-pin-2-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2012-yamaha-yzf-r1-hd-black-sport-motorcycle-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ducatio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube-video-gif%281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube-video-gif%281%291.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube-video-gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube-video-gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left-circle-fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
